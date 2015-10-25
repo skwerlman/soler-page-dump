@@ -1,0 +1,387 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AE2 Stuff - TechnicSolder</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"70e5b39b76363c4877ccaa4c6720f2a0",petok:"f886d0177e332c8c552358b4267a51df61cc1da8-1445801387-1800",zone:"tetrarch.co",rocket:"a",apps:{"ga_key":{"ua":"UA-36576568-4","ga_bs":"2"}}}];document.write('<script type="text/javascript" src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=b0bfc08c34/cloudflare.min.js"><'+'\/script>');}}catch(e){};
+//]]>
+</script>
+<link rel="shortcut icon" href="http://solder.tetrarch.co/favicon.ico">
+<script data-rocketsrc="http://solder.tetrarch.co/js/jquery-1.11.1.min.js" type="text/rocketscript"></script>
+<script data-rocketsrc="http://solder.tetrarch.co/js/bootstrap.min.js" type="text/rocketscript"></script>
+<link href="http://solder.tetrarch.co/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://solder.tetrarch.co/font-awesome/css/font-awesome.css" rel="stylesheet">
+<link href="http://solder.tetrarch.co/css/sb-admin.css" rel="stylesheet">
+<link href="http://solder.tetrarch.co/css/solder.css" rel="stylesheet">
+<script data-rocketsrc="http://solder.tetrarch.co/js/plugins/metisMenu/jquery.metisMenu.js" type="text/rocketscript"></script>
+<script data-rocketsrc="http://solder.tetrarch.co/js/sb-admin.js" type="text/rocketscript"></script>
+<script data-rocketsrc="http://solder.tetrarch.co/js/plugins/dataTables/jquery.dataTables.js" type="text/rocketscript"></script>
+<script data-rocketsrc="http://solder.tetrarch.co/js/plugins/dataTables/dataTables.bootstrap.js" type="text/rocketscript"></script>
+<link href="http://solder.tetrarch.co/css/dataTables.bootstrap.css" rel="stylesheet">
+<script data-rocketsrc="http://solder.tetrarch.co/js/jquery.slugify.js" type="text/rocketscript"></script>
+<script data-rocketsrc="http://solder.tetrarch.co/js/nav-float.js" type="text/rocketscript"></script>
+<link href="http://solder.tetrarch.co/css/OpenSansfont.css" rel="stylesheet">
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-36576568-4']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]> */
+</script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="http://solder.tetrarch.co/dashboard"><img src="http://solder.tetrarch.co/img/title.png"> v0.7.2.2</a>
+</div>
+<ul class="nav navbar-top-links navbar-left">
+</ul>
+<ul class="nav navbar-top-links navbar-right">
+<li><a href="http://docs.solder.io/" target="blank_">Help <i class="fa fa-question"></i></a></li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+skwerlman <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+</a>
+<ul class="dropdown-menu dropdown-user">
+<li><a href="http://solder.tetrarch.co/user/edit/1"><i class="fa fa-user fa-fw"></i> User Profile</a>
+</li>
+<li><a href="http://solder.tetrarch.co/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+</li>
+</ul>
+ 
+</li>
+ 
+</ul>
+ 
+</nav>
+ 
+<nav class="navbar-default navbar-static-side" role="navigation">
+<div class="sidebar-collapse">
+<ul class="nav side-menu" id="side-menu">
+<li>
+<a href="http://solder.tetrarch.co/dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+</li>
+<li>
+<a href="#"><i class="fa fa-folder fa-fw"></i> Modpacks<span class="fa arrow"></span></a>
+<ul class="nav nav-second-level">
+<li><a href="http://solder.tetrarch.co/modpack/view/1"><img src="http://solder.tetrarch.co/resources/default/icon.png" style="width: 16px; height: 16px;"> Glowing Octo Minecraft</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/2"><img src="http://solder.tetrarch.co/resources/default/icon.png" style="width: 16px; height: 16px;"> Scoot Craft</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/3"><img src="http://solder.tetrarch.co/resources/minetek/icon.png" style="width: 16px; height: 16px;"> MineTek 4</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/4"><img src="http://solder.tetrarch.co/resources/default/icon.png" style="width: 16px; height: 16px;"> Softy Just Wants Dinos</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/5"><img src="http://solder.tetrarch.co/resources/default/icon.png" style="width: 16px; height: 16px;"> CC-Testbed</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/6"><img src="http://solder.tetrarch.co/resources/project-icarus/icon.png" style="width: 16px; height: 16px;"> Project Icarus</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/7"><img src="http://solder.tetrarch.co/resources/default/icon.png" style="width: 16px; height: 16px;"> Old Futures (Hidden)</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/list">Modpack List</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/create">Add Modpack</a></li>
+</ul>
+ 
+</li>
+<li>
+<a href="#"><i class="fa fa-book fa-fw"></i> Mod Library<span class="fa arrow"></span></a></a>
+<ul class="nav nav-second-level">
+<li><a href="http://solder.tetrarch.co/mod/list">Mod List</a></li>
+<li><a href="http://solder.tetrarch.co/mod/create">Add a Mod</a></li>
+</ul>
+</li>
+<li>
+<a href="#"><i class="fa fa-wrench fa-fw"></i> Configure Solder<span class="fa arrow"></span></a>
+<ul class="nav nav-second-level">
+<li>
+<a href="http://solder.tetrarch.co/solder/configure">Main Settings</a>
+</li>
+<li>
+<a href="http://solder.tetrarch.co/solder/update">Update Checker</a>
+</li>
+<li>
+<a href="http://solder.tetrarch.co/user/list">User Management</a>
+</li>
+<li>
+<a href="http://solder.tetrarch.co/client/list">Client Management</a>
+</li>
+<li><a href="http://solder.tetrarch.co/key/list">API Key Management</a></li>
+</ul>
+ 
+</li>
+</ul>
+ 
+</div>
+ 
+</nav>
+ 
+<div id="page-wrapper">
+<div class="row">
+<div class="col-lg-12">
+<div class="page-header">
+<h1>Mod Library</h1>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+AE2 Stuff <small>ae2stuff</small>
+</div>
+<div class="panel-body">
+<ul class="nav nav-tabs" id="tabs">
+<li class="active"><a href="#versions" data-toggle="tab">Versions</a></li>
+<li><a href="#details" data-toggle="tab">Details</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade" id="details">
+<br>
+<form method="post" action="http://solder.tetrarch.co/mod/modify/101">
+<div class="row">
+<div class="col-md-6">
+<div class="form-group">
+<label for="pretty_name">Mod Name</label>
+<input type="text" class="form-control" name="pretty_name" id="pretty_name" value="AE2 Stuff">
+</div>
+<div class="form-group">
+<label for="name">Mod Slug</label>
+<input type="text" class="form-control" name="name" id="name" value="ae2stuff">
+</div>
+<div class="form-group">
+<label for="author">Author</label>
+<input type="text" class="form-control" name="author" id="author" value="bdew">
+</div>
+<div class="form-group">
+<label for="description">Description</label>
+<textarea name="description" id="description" class="form-control" rows="5">Adds 3 new blocks that makes the process of creating processors, crystals, and patterns using NEI much easier and faster.</textarea>
+</div>
+<div class="form-group">
+<label for="link">Mod Website</label>
+<input type="text" class="form-control" name="link" id="link" value="http://minecraft.curseforge.com/mc-mods/225194-ae2-stuff">
+</div>
+<div class="form-group">
+<label for="donatelink">Author Donation Link</label>
+<input type="text" class="form-control" name="donatelink" id="donatelink" value="">
+<span class="help-block">This is only in use by the official Technic Solder</span>
+</div>
+</div>
+</div>
+<input class="btn btn-success" type="submit" value="Save Changes">
+<a href="http://solder.tetrarch.co/mod/delete/101" class="btn btn-danger">Delete Mod</a>
+<a href="http://solder.tetrarch.co/mod/list" class="btn btn-primary">Go Back</a>
+</form>
+</div>
+<div class="tab-pane fade in active" id="versions">
+<br>
+<p>Solder currently does not support uploading files directly to it. Your repository still needs to exist and follow a strict directory structure. When you add versions the URL will be verified to make sure the file exists before it is added to Solder. The directory stucture for mods is as follow:</p>
+<blockquote><strong>/mods/[modslug]/[modslug]-[version].zip</strong></blockquote>
+<div class="alert alert-success" id="success-ajax" style="width: 100%;display: none"></div>
+<div class="alert alert-warning" id="warning-ajax" style="width: 100%;display: none"></div>
+<div class="alert alert-danger" id="danger-ajax" style="width: 100%;display: none"></div>
+<table class="table">
+<thead>
+<th></th>
+<th style="width: 15%">Version</th>
+<th>MD5</th>
+<th>Download URL</th>
+<th style="width: 15%"></th>
+</thead>
+<tbody>
+<tr id="add-row">
+<form method="post" id="add" action="http://solder.tetrarch.co/mod/add-version">
+<input type="hidden" name="mod-id" value="101">
+<td></td>
+<td>
+<input type="text" name="add-version" id="add-version" class="form-control" placeholder="1.0.0"></td>
+<td>
+<input type="text" name="add-md5" id="add-md5" class="form-control" placeholder="N/A"></td>
+</td>
+<td><span id="add-url">N/A</span></td>
+<td><button type="submit" class="btn btn-success btn-small add">Add Version</button></td>
+</form>
+</tr>
+<tr class="version" rel="341">
+<form method="post" id="rehash" action="http://solder.tetrarch.co/mod/rehash">
+<input type="hidden" name="version-id" value="341">
+<td><i class="version-icon fa fa-plus" rel="341"></i></td>
+<td class="version" rel="341">0.5.0.56-mc1.7.10</td>
+<td><input type="text" class="md5 form-control" name="md5" id="md5" value="f122936df5b65ecdcc0cdbfb97344521" rel="341"></input></td>
+<td class="url" rel="341"><small><a href="http://solder.tetrarch.co/mod-repo/mods/ae2stuff/ae2stuff-0.5.0.56-mc1.7.10.zip">http://solder.tetrarch.co/mod-repo/mods/ae2stuff/ae2stuff-0.5.0.56-mc1.7.10.zip</a></small></td>
+<td><button type="submit" class="btn btn-primary btn-xs rehash" rel="341">Rehash</button> <button class="btn btn-danger btn-xs delete" rel="341">Delete</button>
+</form>
+</tr>
+<tr class="version-details" rel="341" style="display: none">
+<td colspan="5">
+<h5>Builds Used In</h5>
+<ul>
+<li><a href="http://solder.tetrarch.co/modpack/view/3">MineTek 4</a> - <a href="http://solder.tetrarch.co/modpack/build/54">testing-1</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/3">MineTek 4</a> - <a href="http://solder.tetrarch.co/modpack/build/55">testing-2</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/3">MineTek 4</a> - <a href="http://solder.tetrarch.co/modpack/build/56">testing-3</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/3">MineTek 4</a> - <a href="http://solder.tetrarch.co/modpack/build/59">testing-4</a></li>
+</ul>
+</td>
+</tr>
+<tr class="version" rel="194">
+<form method="post" id="rehash" action="http://solder.tetrarch.co/mod/rehash">
+<input type="hidden" name="version-id" value="194">
+<td><i class="version-icon fa fa-plus" rel="194"></i></td>
+<td class="version" rel="194">0.3.1.33</td>
+<td><input type="text" class="md5 form-control" name="md5" id="md5" value="c263189026b23c7a7785e50e3cff5260" rel="194"></input></td>
+<td class="url" rel="194"><small><a href="http://solder.tetrarch.co/mod-repo/mods/ae2stuff/ae2stuff-0.3.1.33.zip">http://solder.tetrarch.co/mod-repo/mods/ae2stuff/ae2stuff-0.3.1.33.zip</a></small></td>
+<td><button type="submit" class="btn btn-primary btn-xs rehash" rel="194">Rehash</button> <button class="btn btn-danger btn-xs delete" rel="194">Delete</button>
+</form>
+</tr>
+<tr class="version-details" rel="194" style="display: none">
+<td colspan="5">
+<h5>Builds Used In</h5>
+<ul>
+<li><a href="http://solder.tetrarch.co/modpack/view/3">MineTek 4</a> - <a href="http://solder.tetrarch.co/modpack/build/16">4.0.1</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/3">MineTek 4</a> - <a href="http://solder.tetrarch.co/modpack/build/24">4.0.2</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/3">MineTek 4</a> - <a href="http://solder.tetrarch.co/modpack/build/25">4.0.3</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/3">MineTek 4</a> - <a href="http://solder.tetrarch.co/modpack/build/27">4.0.4</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/3">MineTek 4</a> - <a href="http://solder.tetrarch.co/modpack/build/28">4.0.4-DEV</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/3">MineTek 4</a> - <a href="http://solder.tetrarch.co/modpack/build/29">4.0.4-FC</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/3">MineTek 4</a> - <a href="http://solder.tetrarch.co/modpack/build/34">4.0.5</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/3">MineTek 4</a> - <a href="http://solder.tetrarch.co/modpack/build/35">4.0.5 - No FastCraft</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/3">MineTek 4</a> - <a href="http://solder.tetrarch.co/modpack/build/37">4.0.5.1</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/3">MineTek 4</a> - <a href="http://solder.tetrarch.co/modpack/build/38">4.0.5.2</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/3">MineTek 4</a> - <a href="http://solder.tetrarch.co/modpack/build/39">4.0.5.2 - No FastCraft</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/3">MineTek 4</a> - <a href="http://solder.tetrarch.co/modpack/build/40">4.0.6.0</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/6">Project Icarus</a> - <a href="http://solder.tetrarch.co/modpack/build/41">0.2</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/6">Project Icarus</a> - <a href="http://solder.tetrarch.co/modpack/build/42">0.3</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/6">Project Icarus</a> - <a href="http://solder.tetrarch.co/modpack/build/43">0.4</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/3">MineTek 4</a> - <a href="http://solder.tetrarch.co/modpack/build/44">4.0.5.3</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/3">MineTek 4</a> - <a href="http://solder.tetrarch.co/modpack/build/45">4.0.5.3-NOFC</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/3">MineTek 4</a> - <a href="http://solder.tetrarch.co/modpack/build/46">4.0.5.3-OP</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/6">Project Icarus</a> - <a href="http://solder.tetrarch.co/modpack/build/47">1.0</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/6">Project Icarus</a> - <a href="http://solder.tetrarch.co/modpack/build/48">1.1</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/3">MineTek 4</a> - <a href="http://solder.tetrarch.co/modpack/build/49">4.0.6.1</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/3">MineTek 4</a> - <a href="http://solder.tetrarch.co/modpack/build/50">4.0.6.1-NOFC</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/3">MineTek 4</a> - <a href="http://solder.tetrarch.co/modpack/build/51">4.0.6.1-OP</a></li>
+<li><a href="http://solder.tetrarch.co/modpack/view/6">Project Icarus</a> - <a href="http://solder.tetrarch.co/modpack/build/52">1.2</a></li>
+</ul>
+</td>
+</tr>
+<tr class="version" rel="140">
+<form method="post" id="rehash" action="http://solder.tetrarch.co/mod/rehash">
+<input type="hidden" name="version-id" value="140">
+<td><i class="version-icon fa fa-plus" rel="140"></i></td>
+<td class="version" rel="140">0.1.6.14</td>
+<td><input type="text" class="md5 form-control" name="md5" id="md5" value="8e983f35c297ec902ae27436fb204ac4" rel="140"></input></td>
+<td class="url" rel="140"><small><a href="http://solder.tetrarch.co/mod-repo/mods/ae2stuff/ae2stuff-0.1.6.14.zip">http://solder.tetrarch.co/mod-repo/mods/ae2stuff/ae2stuff-0.1.6.14.zip</a></small></td>
+<td><button type="submit" class="btn btn-primary btn-xs rehash" rel="140">Rehash</button> <button class="btn btn-danger btn-xs delete" rel="140">Delete</button>
+</form>
+</tr>
+<tr class="version-details" rel="140" style="display: none">
+<td colspan="5">
+<h5>Builds Used In</h5>
+<ul>
+<li><a href="http://solder.tetrarch.co/modpack/view/6">Project Icarus</a> - <a href="http://solder.tetrarch.co/modpack/build/36">0.1</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+ 
+</div>
+ 
+<script type="text/rocketscript">
+
+$('#add-version').focusout(function() {
+	$("#add-url").html('<a href="http://solder.tetrarch.co/mod-repo/mods/ae2stuff/ae2stuff-' + $(this).val() + '.zip" target="_blank">http://solder.tetrarch.co/mod-repo/mods/ae2stuff/ae2stuff-' + $(this).val() + '.zip</a>');
+});
+
+$('#add').submit(function(e) {
+	e.preventDefault();
+	console.log($("#add").serialize());
+	if ($('#add-version').val() != "") {
+		$.ajax({
+			type: "POST",
+			url: "http://solder.tetrarch.co/mod/add-version",
+			data: $("#add").serialize(),
+			success: function (data) {
+				if (data.status == "success") {
+					$("#add-row").after('<tr><td></td><td>' + data.version + '</td><td>' + data.md5 + '</td><td><a href="http://solder.tetrarch.co/mod-repo/mods/ae2stuff/ae2stuff-' + data.version + '.zip" target="_blank">http://solder.tetrarch.co/mod-repo/mods/ae2stuff/ae2stuff-' + data.version + '.zip</a></td><td></td></tr>');
+					$("#success-ajax").stop(true, true).html('Added mod version at ' + data.version).fadeIn().delay(3000).fadeOut();
+				} else if (data.status == "warning") {
+					$("#add-row").after('<tr><td></td><td>' + data.version + '</td><td>' + data.md5 + '</td><td><a href="http://solder.tetrarch.co/mod-repo/mods/ae2stuff/ae2stuff-' + data.version + '.zip" target="_blank">http://solder.tetrarch.co/mod-repo/mods/ae2stuff/ae2stuff-' + data.version + '.zip</a></td><td></td></tr>');
+					$("#warning-ajax").stop(true, true).html('Added mod version at ' + data.version + ". " + data.reason).fadeIn().delay(5000).fadeOut();
+				} else {
+					$("#danger-ajax").stop(true, true).html('Error: ' + data.reason).fadeIn().delay(3000).fadeOut();
+				}
+			},
+			error: function (xhr, textStatus, errorThrown) {
+				$("#danger-ajax").stop(true, true).html(textStatus + ': ' + errorThrown).fadeIn().delay(3000).fadeOut();
+			}
+		})
+	}
+});
+
+$('.version-icon').click(function() {
+	$('.version-details[rel=' + $(this).attr('rel') + "]").toggle(function() {
+		$('.version-icon[rel=' + $(this).attr('rel') + "]").toggleClass("fa-minus");
+	});
+});
+
+$('.rehash').click(function(e) {
+	e.preventDefault();
+	$(".md5[rel=" + $(this).attr('rel') + "]").fadeOut();
+	console.log($("#rehash").serialize());
+	$.ajax({
+		type: "POST",
+		url: "http://solder.tetrarch.co/mod/rehash/",
+		data: $("#rehash").serialize(),
+		success: function (data) {
+			if (data.status == "success") {
+				$("#success-ajax").stop(true, true).html('MD5 hashing complete.').fadeIn().delay(3000).fadeOut();
+			} else if (data.status == "warning") {
+				$("#warning-ajax").stop(true, true).html('MD5 hashing complete. ' + data.reason).fadeIn().delay(5000).fadeOut();
+			} else {
+				$("#danger-ajax").stop(true, true).html('Error: ' + data.reason).fadeIn().delay(3000).fadeOut();
+			}
+			$(".md5[rel=" + data.version_id + "]").val(data.md5);
+			$(".md5[rel=" + data.version_id + "]").fadeIn();
+		},
+		error: function (xhr, textStatus, errorThrown) {
+			$("#danger-ajax").stop(true, true).html(textStatus + ': ' + errorThrown).fadeIn().delay(3000).fadeOut();
+		}
+	});
+});
+
+$('.delete').click(function(e) {
+	e.preventDefault();
+	$.ajax({
+		type: "GET",
+		url: "http://solder.tetrarch.co/mod/delete-version/" + $(this).attr('rel'),
+		success: function (data) {
+			if (data.status == "success") {
+				$('.version[rel=' + data.version_id + ']').fadeOut();
+				$('.version-details[rel=' + data.version_id + ']').fadeOut();
+				$("#success-ajax").stop(true, true).html('Mod version ' + data.version + ' deleted.').fadeIn().delay(3000).fadeOut();
+			} else {
+				$("#danger-ajax").stop(true, true).html('Error: ' + data.reason).fadeIn().delay(3000).fadeOut();
+			}
+		},
+		error: function (xhr, textStatus, errorThrown) {
+			$("#danger-ajax").stop(true, true).html(textStatus + ': ' + errorThrown).fadeIn().delay(3000).fadeOut();
+		}
+	});
+});
+
+</script>
+</body>
+</html>
